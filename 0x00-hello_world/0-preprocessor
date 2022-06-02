@@ -1,1 +1,2 @@
-#!/bin/bash\n echo "gcc -E $CFILE > c"
+#!/bin/bash
+ echo "gcc -E $CFILE > c"
