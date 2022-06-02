@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ *main - entry point of the program
  *
- * return : Always 0 (success)
+ *Description - prints exactly
+ *
+ *Return: Always 0
  */
 int main(void)
 {
