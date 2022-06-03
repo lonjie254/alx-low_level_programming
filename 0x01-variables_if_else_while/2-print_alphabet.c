@@ -12,10 +12,12 @@
  */
 int main(void)
 {
-for (int x = 'A'; x <= 'Z'; x++)
+int x = 'A';
+while (x <= 'Z')
 {
-int lower_x = tolower(x);
-putchar(lower_x);
+x = tolower(x);
+putchar(x);
+x++;
 }
 return (0);
 }
