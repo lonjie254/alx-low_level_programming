@@ -3,19 +3,19 @@
 /**
  *main - entry point
  *
- *return : always 0
+ *Return: Always 0 (success)
  */
 int main(void)
 {
-char charType;
-int integeType;
-float floatType;
-double doubleType;
-float floatType;
-printf("Size of a char: %zu bytes\n", sizeof(charType));
-printf("Size of an int: %zu bytes\n", sizeof(intType));
-printf("Size of a float: %zu bytes\n", sizeof(floatType));
-printf("Size of a double: %zu bytes\n", sizeof(doubleType));
-printf("Size of a float: %zu byte\n", sizeof(floatType));    
+int a;
+long int b;
+long long int c;
+char d;
+float f;
+printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(d));
+printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(a));
+printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
+printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(c));
+printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
 return (0);
 }
