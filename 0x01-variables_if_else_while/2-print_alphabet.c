@@ -8,7 +8,7 @@
  *
  *description - A-Z characters in lowercase
  *
- *Return: Always 0 (success)
+ *Return: Always 0 (SUCCESS)
  */
 int main(void)
 {
