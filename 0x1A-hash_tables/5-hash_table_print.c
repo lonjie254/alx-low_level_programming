@@ -5,28 +5,31 @@
  *
  * @ht: pointer to the hash table
  * Return: no return
- */
+ **/
+
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int i;
-	hash_node_t *tmp;
-	char *sep;
+	hash_node_t *node;
+	unsigned long int cont = 0, i = 0;
 
-	if (ht == NULL)
-		return;
-
-	printf("{");
-	sep = "";
-
-	for (i = 0; i < ht->size; i++)
+	if (ht != NULL)
 	{
-		tmp = ht->array[i];
-		while (tmp != NULL)
+		printf("{");
+
+		for (cont = 0; cont < ht->size; cont++)
 		{
-			printf("%s'%s': '%s'", sep, tmp->key, tmp->value);
-			sep = ", ";
-			tmp = tmp->next;
+			node = ht->array[cont];
+
+			while (node != NULL)
+			{
+				if (i != 0)
+					printf(", ");
+				i = 1;
+				printf("'%s': '%s'", node->key, node->value);
+				node = node->next;
+			}
 		}
+
+		printf("}\n");
 	}
-	printf("}\n");
 }
